@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" metadata-complete="false" version="2.5">
+  <servlet>
+    <servlet-name>SecurityEjbServlet</servlet-name>
+    <servlet-class>example.ejb.security.EjbSecurityExample.SecurityEjbServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecurityEjbServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <security-role>
+    <role-name>Manager</role-name>
+  </security-role>
+    <security-role>
+    <role-name>VP</role-name>
+  </security-role>
+    <security-role>
+    <role-name>Administrator</role-name>
+  </security-role>
+ 
+</web-app>
